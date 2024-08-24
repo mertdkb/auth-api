@@ -1,9 +1,10 @@
+server:
+  port: 8080
+
 spring:
   application:
     name: authapi
-
-  server:
-    port: 8080
+  
   datasource:
     url: jdbc:mysql://localhost:3306/gangdevauth?serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
     username: root
@@ -13,7 +14,6 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
-
 
 security:
   jwt:
